@@ -1,0 +1,73 @@
+<view class="search-top">
+     <view class="search">
+          <image src="/assets/imgs/search.png" class="search_img" />
+          <input type="text" placeholder="搜索小红书产品" class="search_inp" />
+     </view>
+</view>
+<scroll-view class="nav" scroll-x="true">
+     <navigator>推荐</navigator>
+     <navigator>美妆个护</navigator>
+     <navigator>服饰鞋包</navigator>
+     <navigator>母婴</navigator>
+     <navigator>家具</navigator>
+</scroll-view>
+<!-- 广告位1 -->
+<view class="ad1">
+     <view class='ad1-item'>
+          <image src="/assets/tabs/xhd.png" mode='widthFix'></image>
+          <text class='bt'>小红店</text>
+          <text class='nr'>赫莲娜会员1/2价</text>
+     </view>
+     <view class='ad1-item'>
+          <image src="/assets/tabs/fls.png" mode='widthFix'></image>
+          <text class='bt'>福利社</text>
+          <text class='nr'>路易威登经典款</text>
+     </view>
+     <view class='ad1-item'>
+          <image src="/assets/tabs/yg.png" mode='widthFix'></image>
+          <text class='bt'>有光</text>
+          <text class='nr'>迪奥香水99元起</text>
+     </view>
+</view>
+<!-- 广告位2 -->
+<view class="ad2">
+     <view class='ad2-item'>
+          <image src="/assets/tabs/ssny.png"></image>
+          <text>舒适内衣</text>
+     </view>
+     <view class='ad2-item'>
+          <image src="/assets/tabs/xqmq.png"></image>
+          <text>仙群美群</text>
+     </view>
+     <view class='ad2-item'>
+          <image src="/assets/tabs/cymx.png"></image>
+          <text>出游美鞋</text>
+     </view>
+     <view class='ad2-item'>
+          <image src="/assets/tabs/zfgz.png"></image>
+          <text>舒适内衣</text>
+     </view>
+</view>
+<!-- 产品列表 -->
+<view class='product'>
+     <view class='product-item' wx:for="{{product}}">
+          <navigator url="/pages/commodity-info/commodity-info?id={{item.id}}">
+               <image src="{{item.cover.url}}" lazy-load mode="widthFix"></image>
+               <view class='title'>{{item.title}}</view>
+               <view class="info">{{item.info}}</view>
+               <view class="limit" wx:if="{{item.islimit == 1}}">限时特价</view>
+               <view class='item-bottom'>
+                    <view class='item-bottom-1'>
+                         <text class='price'>￥{{item.price}}</text>
+                         <text class='original'>￥{{item.original}}</text>
+                    </view>
+                    <text class="business">{{item.business}}</text>
+               </view>
+          </navigator>
+     </view>
+
+</view>
+<!-- 购物车logo -->
+<navigator class='cart'  url="/pages/cart/cart" >
+     <image src="/assets/imgs/cart.png"></image>
+</navigator>

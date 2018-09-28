@@ -1,0 +1,128 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 全局背景颜色 */
+page{
+  background-color:#f4f8fb;
+}
+/* 全局搜索框+放大镜 */
+.search-top{
+     background-color: #fff;
+     padding: 10rpx 0 15rpx 0 ;
+}
+.search {
+     border-radius: 50px;
+     background-color: #eee;
+     display: flex;
+     width: 90%;
+     margin: 0 auto;
+}
+
+.search_img {
+     margin-top: 10rpx;
+     width: 35rpx;
+     height: 35rpx;
+     padding-left: 25rpx;
+}
+.search_inp {
+     border-radius: 50px;
+     padding-left: 20rpx;
+     font-size: 14px;
+     width: 80%;
+}
+/* 头部导航栏 */
+.nav{
+     font-size: 12px;
+     background-color: #fff;
+     height: 80rpx;
+     margin-top:3rpx;
+     color: #aaa;
+     padding: 0 10rpx;
+     white-space: nowrap;
+}
+.nav navigator{
+  display: inline-block;
+  padding:25rpx 35rpx;
+}
+/* 小箭头 */
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width:15rpx;
+  height: 15rpx;
+  border-top:3rpx solid #ccc;
+  border-right: 3rpx solid #ccc;
+  transform: rotate(45deg);
+  margin-right: 20rpx;
+}
+
+.borders{
+     border-bottom: 1px solid #eee;
+}
+/* 超出部分。。。 */
+.ell{
+  overflow: hidden;
+  white-space: nowrap;         /*不允许换行*/
+  text-overflow: ellipsis;     /*超出部分补充...*/
+}
+/* 底部赞+分享 */
+.share-box{
+     display: flex;
+     height: 100rpx;
+     background: #333;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     color: #fff;
+     margin-top: 100rpx;
+}
+.box-item{
+     width: 50%;
+     height: 100rpx;
+     display: flex;
+     margin: auto;
+     line-height: 100rpx;
+     padding-left: 110rpx;
+}
+.share-box::after{
+     content: "";
+     display: block;
+     height: 35rpx;
+     border-right: 1px solid #000;
+     position: absolute;
+     left:372rpx;
+     top:32rpx;
+}
+.share-box image{
+     width: 50rpx;
+     height: 50rpx;
+     padding-right: 10rpx;
+     vertical-align: middle;
+}
+.ell{
+  overflow: hidden;
+  white-space: nowrap;         /*不允许换行*/
+  text-overflow: ellipsis;     /*超出部分补充...*/
+}
+/* 确认修改 */
+.is-update{
+     background: #ff2742;
+     width: 100%;
+     height: 120rpx;
+     text-align: center;
+     line-height: 120rpx;
+     color: #fff;
+     position: fixed;
+     bottom: 0;
+}

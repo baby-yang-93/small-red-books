@@ -1,0 +1,43 @@
+{
+     "pages": [
+          "pages/logs/logs",
+          "pages/commodity-info/commodity-info",
+          "pages/cart/cart",
+          "pages/shopping/shopping",
+          "pages/sing/sign",
+          "pages/note-detail/note-detail",
+          "pages/video/video",
+          "pages/userDetail/userDetail",
+          "pages/updateUname/updateUname",
+          "pages/profile/profile",
+          "pages/index/index"
+     ],
+     "tabBar": {
+          "list": [
+               {
+                    "pagePath": "pages/logs/logs",
+                    "text": "首页",
+                    "iconPath": "/assets/tabs/shouye0.png",
+                    "selectedIconPath": "/assets/tabs/shouye.png"
+               },
+               {
+                    "pagePath": "pages/shopping/shopping",
+                    "text": "商城",
+                    "iconPath": "/assets/tabs/shop0.png",
+                    "selectedIconPath": "/assets/tabs/shop1.png"
+               },
+               {
+                    "pagePath": "pages/profile/profile",
+                    "text": "我的",
+                    "iconPath": "/assets/tabs/people.png",
+                    "selectedIconPath": "/assets/tabs/people_fill.png"
+               }
+          ]
+     },
+     "window": {
+          "backgroundTextStyle": "light",
+          "navigationBarBackgroundColor": "#fff",
+          "navigationBarTitleText": "小红书",
+          "navigationBarTextStyle": "black"
+     }
+}

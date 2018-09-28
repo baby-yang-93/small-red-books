@@ -1,0 +1,55 @@
+/* pages/profile/profile.wxss */
+
+/* 头部头像块 */
+
+.pro-top {
+     background-color: #fff;
+     height: 390rpx;
+     display: flex;
+     flex-direction: column;
+     justify-content: center; /*水平居中*/
+     align-items: center; /*垂直居中*/
+}
+
+.top-img image {
+     width: 140rpx;
+     height: 140rpx;
+     border-radius: 50%;
+}
+
+.username {
+     font-size: 18px;
+     padding: 15rpx 0;
+}
+
+.my-data {
+     font-size: 14px;
+     border: 1px solid #ddd;
+     padding: 7rpx 33rpx;
+     border-radius: 35rpx;
+}
+
+.pro-center-1 {
+     background-color: #fff;
+     height: 100rpx;
+     margin-top: 25rpx;
+}
+
+.imgs-list {
+     width: 40rpx;
+     height: 40rpx;
+     padding: 20rpx 30rpx;
+     vertical-align: middle;
+}
+
+.index-text {
+     font-size: 13px;
+}
+
+.pro-center-2,.pro-bottom {
+     background-color: #fff;
+     margin-top: 25rpx;
+}
+.pro-center-2 view{
+     line-height: 100rpx;
+}

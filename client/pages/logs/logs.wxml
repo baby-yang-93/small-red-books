@@ -1,0 +1,47 @@
+<!--logs.wxml-->
+<!-- 头部搜索框部分 -->
+<view class="search-top">
+    <view class="search">
+        <image src="/assets/imgs/search.png" class="search_img" />
+        <input type="text" placeholder="大家都在搜“黄子韬布鞋”" class="search_inp" />
+    </view>
+</view>
+<!-- 导航栏列表 -->
+<scroll-view class="nav" scroll-x="true">
+    <navigator>推荐</navigator>
+    <navigator>附近</navigator>
+    <navigator>视频</navigator>
+    <navigator>时尚</navigator>
+    <navigator>护肤</navigator>
+    <navigator>彩妆</navigator>
+    <navigator>美食</navigator>
+    <navigator>旅行</navigator>
+    <navigator>明星</navigator>
+    <navigator>读书</navigator>
+    <navigator>影视</navigator>
+    <navigator>健身</navigator>
+    <navigator>家具</navigator>
+    <navigator>音乐</navigator>
+    <navigator>宠物</navigator>
+</scroll-view>
+
+<!-- 内容主体 -->
+<view class='content-list'>
+    <view class='item' wx:for="{{list}}" wx:key="id">
+        <navigator url="/pages/note-detail/note-detail?id={{item.id}}">
+            <image class='item-img' src="{{item.cover.url}}" lazy-load mode="widthFix"></image>
+               <view class='item-introduce '>{{item['release-message']}}</view>
+            <view class='item-bottom'>
+                <view class='bottom-left'>
+                    <image src="{{item.avatar}}"></image>
+                    <text>{{item.uname}}</text>
+                </view>
+                <view class='bottom-right'>
+                    <image src="/assets/imgs/like.png"></image>
+                    <text>10745</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
+
+</view>

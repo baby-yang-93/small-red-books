@@ -1,0 +1,3 @@
+<view class="update">2-24个字符，一个月只能申请修改一次</view>
+<input type='text' value='福尔摩洋'></input>
+<navigator class='is-update' bindtap='true' url="">确认修改</navigator>

@@ -1,0 +1,14 @@
+/* pages/sing/sign.wxss */
+.introduce{
+     font-size: 14px;
+     color: #aaa;
+     height: 50rpx;
+     padding: 25rpx 25rpx;
+}
+.gx-content{
+     background: #fff;
+     height: 400rpx;
+     color: #000;
+     width: 100%;
+     font-size: 14px;
+}

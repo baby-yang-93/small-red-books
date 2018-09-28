@@ -1,0 +1,14 @@
+/* pages/updateUname/updateUname.wxss */
+
+.update {
+     font-size: 13px;
+     line-height: 60rpx;
+     padding-left: 25rpx;
+}
+
+input {
+     background-color: #fff;
+     font-size: 13px;
+     height: 80rpx;
+     padding-left: 25rpx;
+}

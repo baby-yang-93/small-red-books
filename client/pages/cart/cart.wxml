@@ -1,0 +1,6 @@
+<!-- 加入购物车商品 -->
+<view class="cart-info">
+     <radio-group class="business-group">
+          <radio value="{{item.name}}" checked="{{ischecked}}" color="#fe2841"/>
+     </radio-group>
+</view>

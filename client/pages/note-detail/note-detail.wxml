@@ -1,0 +1,49 @@
+<view class="pic">
+     <swiper interval='2500'>
+          <swiper-item wx:for="{{content.images}}" wx:key="id">
+               <!--图片 设置宽高 等比例缩放-->
+               <image src="{{item.url}}" mode="aspectFill"></image>
+          </swiper-item>
+     </swiper>
+     
+</view>
+<view class='content-message'>
+     <view class="msg-top">
+          <view>
+               <image src="{{content.content.avatar}}"></image>
+               <text class='msg-uname'>{{content.content.uname}}</text>
+          </view>
+          <view bindtap="setfollow">
+               <view class='follow2' wx:if="{{isfollow}}">已关注</view>
+               <view class='follow1' wx:else>关注</view>
+          </view>
+
+     </view>
+     <view>{{content.content['release-message']}}</view>
+
+     <view class='update-time'>
+          <view>{{content.content['release-time']}}</view>
+          <view class='Collection'>
+               <image src="/assets/imgs/shoucang.png"></image>
+          </view>
+     </view>
+
+</view>
+
+<!-- 赞+分享 -->
+<view class='share-box'>
+     <view class='box-item' bindtap="setCollection">
+          <navigator>
+               <image src="/assets/imgs/red.png" hover-class="navigator-hover" wx:if="{{isCollection}}"></image>
+               <image src="/assets/imgs/xinyuan.png" hover-class="navigator-hover" wx:else></image>
+          </navigator>
+          <text>{{collectionCount}}</text>
+     </view>
+
+     <view class='box-item'>
+          <navigator>
+               <image src="/assets/imgs/fenxiang.png"></image>
+          </navigator>
+          <text>865</text>
+     </view>
+</view>

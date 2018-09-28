@@ -1,0 +1,5 @@
+<!--pages/sing/sign.wxml-->
+<view class="introduce">有趣的个人介绍会吸引更多粉丝哦</view>
+
+<textarea class="gx-content"></textarea> 
+<navigator class='is-update' bindtap='true' url="/pages/userDetail/userDetail">确认修改</navigator>

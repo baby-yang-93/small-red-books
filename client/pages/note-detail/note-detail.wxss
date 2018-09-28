@@ -1,0 +1,53 @@
+/* pages/note-detail/note-detail.wxss */
+.pic, .pic image, .pic swiper {
+     width: 100%;
+     height: 850rpx;
+}
+.content-message {
+     width: 100%;
+     padding: 30rpx;
+     box-sizing: border-box;
+     font-size: 15px;
+}
+
+.msg-top {
+     display: flex;
+     justify-content: space-between;
+     font-size: 12px;
+     border-bottom: 1px solid #aaa;
+     padding-bottom: 20rpx;
+}
+
+.msg-top image {
+     width: 60rpx;
+     height: 60rpx;
+     border-radius: 50%;
+     vertical-align: middle;
+     margin-right: 25rpx;
+}
+
+.msg-uname {
+     color: rgb(85, 84, 84);
+}
+.follow1{
+     color: red;
+     border: 1px solid red;
+     padding: 10rpx 30rpx;
+     border-radius: 10rpx;
+}
+.follow2{
+     color: #aaa;
+     border: 1px solid #aaa;
+     padding: 10rpx 30rpx;
+     border-radius: 10rpx;
+}
+.update-time{
+     display: flex;
+     justify-content: space-between;
+     padding: 50rpx 0;
+     margin-bottom: 50rpx;
+}
+.Collection image{
+     width: 40rpx;
+     height: 40rpx;
+}

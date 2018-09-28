@@ -1,0 +1,36 @@
+<view class="data">个人资料</view>
+
+<view class='data-list'>
+    <view class='list-header borders arrow'>
+        <navigator bindtap='changeAvatar'>
+            <image src="/assets/imgs/header.png"></image>
+            <text class='data-content'>修改头像</text>
+        </navigator>
+    </view>
+    <view class='list borders arrow'>
+        <navigator bindtap="updateUname">
+            <text>昵称</text>
+            <text class='data-content'>福尔摩洋</text>
+        </navigator>
+    </view>
+    <view class='list borders arrow'>
+        <navigator>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{gender}}">
+                性别：{{gender[index]}}
+            </picker>
+        </navigator>
+    </view>
+    <view class='list borders arrow'>
+        <navigator>
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                生日: {{date}}
+            </picker>
+        </navigator>
+    </view>
+    <view class='list-header arrow'>
+        <navigator url="/pages/sing/sign">
+            <text>个性签名</text>
+            <text class='data-content'>未填写</text>
+        </navigator>
+    </view>
+</view>

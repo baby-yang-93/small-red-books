@@ -1,0 +1,42 @@
+/* pages/userDetail/userDetail.wxss */
+
+.data {
+     font-size: 13px;
+     padding: 25rpx 0 25rpx 25rpx;
+     color: rgb(80, 80, 80);
+}
+
+.data-list {
+     background-color: #fff;
+}
+
+.list-header {
+     padding-left: 27rpx;
+     line-height: 200rpx;
+}
+
+.list-header image {
+     width: 85rpx;
+     height: 85rpx;
+     border-radius: 50%;
+     vertical-align: middle;
+}
+
+view navigator text {
+     font-size: 15px;
+     color: #9f9f9f;
+}
+.list{
+     line-height: 100rpx;
+     padding-left: 30rpx;
+}
+.data-content{
+     margin-left: 100rpx;
+     color: #000;
+}
+.list-header .data-content{
+       margin-left: 80rpx;
+}
+navigator{
+     width: 100%;
+}
