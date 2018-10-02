@@ -1,8 +1,9 @@
 {
      "pages": [
+         "pages/cart/cart",
           "pages/logs/logs",
           "pages/commodity-info/commodity-info",
-          "pages/cart/cart",
+          
           "pages/shopping/shopping",
           "pages/sing/sign",
           "pages/note-detail/note-detail",

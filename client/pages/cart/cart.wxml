@@ -1,6 +1,31 @@
 <!-- 加入购物车商品 -->
 <view class="cart-info">
-     <radio-group class="business-group">
-          <radio value="{{item.name}}" checked="{{ischecked}}" color="#fe2841"/>
-     </radio-group>
+    <view class='info-top'>
+        <radio-group class="business-group">
+            <radio value="" checked="{{ischecked}}" color="#fe2841" />
+        </radio-group>
+        <image src='/assets/tabs/shop0.png'></image>
+        <text class='word'>小红书福利社</text>
+        <view class='zy'>自营</view>
+    </view>
+    <view class='info-content'>
+        <radio-group class="business-group">
+            <radio value="{{item.name}}" checked="{{ischecked}}" color="#fe2841" />
+        </radio-group>
+        <image src='/assets/tabs/product1-2.jpg' class='pic' mode="widthFix"></image>
+        <view class='content-right'>
+            <text class='xstj'>限时特价</text>
+            <text>皮肤吃剂大补丸 · 柔滑亮泽焕颜十全大补面膜50ml</text>
+            <view class='pricr-all'>
+                <text class='price'>￥388</text>
+                <text class='shuifei'>税费:￥4.5</text>
+                <view class='z'>
+                    <text>-</text>
+                    <text>1</text>
+                    <text>+</text>
+                </view>
+                <image src='/assets/imgs/delete.png'></image>
+            </view>
+        </view>
+    </view>
 </view>
